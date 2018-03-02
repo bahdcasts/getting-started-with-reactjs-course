@@ -10,17 +10,20 @@
 
 <body>
   <div id="app"></div>
-  <div>
-    <h1>HELLO WORLD</h1>
-  </div>
-
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
   <script type="text/babel">
     const Header = <h1>HELLO WORLD FROM REACT</h1>;
+    const Clock = function () {
+      // do whatever we want. 
+      const date = new Date();
+      const thisYear = date.getFullYear();
+      return <h1>CopyRight : {thisYear}</h1>;
+    }
+    //  <input type="text" /> 
     /// React.createElement('h1', null, 'HELLO WORLD FROM REACT');
-    ReactDOM.render(Header, document.getElementById('app'));
+    ReactDOM.render(<Clock />, document.getElementById('app'));
   </script>
 </body>
 
