@@ -16,8 +16,10 @@
 
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-  <script>
-    const Header = React.createElement('h1', null, 'HELLO WORLD FROM REACT');
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+  <script type="text/babel">
+    const Header = <h1>HELLO WORLD FROM REACT</h1>;
+    /// React.createElement('h1', null, 'HELLO WORLD FROM REACT');
     ReactDOM.render(Header, document.getElementById('app'));
   </script>
 </body>
