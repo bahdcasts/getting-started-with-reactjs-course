@@ -22,8 +22,18 @@
   <script type="text/babel">
 
     class Counter extends React.Component {
+      handleSubtract() {
+        console.log('subtracted !!!');
+      }
+      handleAdd() {
+        console.log('added !!!');
+      }
       render() {
-        return <h1>THE COUNTER COMPONENT.</h1>;
+        return <div>
+          <button onClick={this.handleSubtract}>-</button>
+            <span style={{ padding: '10px' }}>9</span>
+          <button onClick={this.handleAdd}>+</button>          
+        </div>;
       }
     }
 
