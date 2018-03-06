@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    .header {
+      font-size: 49px;
+      color: red;
+    }
+  </style>
 </head>
 
 <body>
@@ -19,7 +25,7 @@
       // do whatever we want. 
       const date = new Date();
       const thisYear = date.getFullYear();
-      return <h1>CopyRight : {thisYear}</h1>;
+      return <h1 className="header">CopyRight : {thisYear}</h1>;
     }
     //  <input type="text" /> 
     /// React.createElement('h1', null, 'HELLO WORLD FROM REACT');
