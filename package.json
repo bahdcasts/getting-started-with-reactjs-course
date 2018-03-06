@@ -1,0 +1,25 @@
+{
+  "name": "react-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahdcasts/getting-started-with-reactjs-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahdcasts/getting-started-with-reactjs-course/issues"
+  },
+  "homepage": "https://github.com/bahdcasts/getting-started-with-reactjs-course#readme",
+  "devDependencies": {
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10"
+  }
+}
