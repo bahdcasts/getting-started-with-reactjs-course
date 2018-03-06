@@ -28,12 +28,21 @@
         this.state = {
           count: 2
         };
+
+        this.handleAdd = this.handleAdd.bind(this);
+        this.handleSubtract = this.handleSubtract.bind(this);
       }
       handleSubtract() {
-        console.log('subtracted !!!');
+        // subtract one from state count
+        this.setState({
+          count: this.state.count - 1
+        });
       }
       handleAdd() {
-        console.log('added !!!');
+        // add one to state count
+        this.setState({
+          count: this.state.count + 1
+        });
       }
       render() {
         return <div>
